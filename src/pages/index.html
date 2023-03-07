@@ -1,0 +1,13 @@
+---
+title: All Guides
+
+permalink: /
+---
+
+<ul>
+  {% for item in collections.all %}
+  <li>
+    <a href="{{ item.url }}">{{ item.data.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

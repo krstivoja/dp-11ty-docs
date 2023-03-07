@@ -1,6 +1,6 @@
 ---
 title: Installation
-category: [acf-blocks]
+section: getting-started
 order: 1
 ---
 
@@ -28,4 +28,3 @@ As validation you will get green badge active if licence is valid.
 Once Licence is activate new submenu **"ACF Blocks"** will be displayed under Scripts Organizer
 
 ![screenshot 2022 05 15 at 17.50.18](../img/Screenshot-2022-05-15-at-17.50.18.png)
-

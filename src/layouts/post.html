@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<div class="grid grid-flow-row grid-cols-[260px_1fr]">
+  <!-- sidebar nav -->
+  <nav class="bg-red-50 p-5">
+    {% for block in navigation %}
+    <span class="text-gray-500">{{ block.title }}</span>
+    <ol>
+      {% for item in block.items %}
+      <li class="{{ 'bg-red-200' if item.active }}">
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ol>
+    {% endfor %}
+  </nav>
+
+  <!-- content -->
+  <article class="prose prose-lg bg-green-50 p-5">{{ content | safe }}</article>
+</div>
