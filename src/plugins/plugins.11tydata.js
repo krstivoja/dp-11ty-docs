@@ -10,11 +10,24 @@ module.exports = {
       const pluginPosts = data.collections.all.filter((el) => el.data.pluginId === data.pluginId)
 
       // group them by section
-      // const groups = lodash.groupBy(pluginPosts, 'data.section')
+      const sections = lodash.groupBy(pluginPosts, 'data.section')
 
-      // console.log(groups['getting-started']?.[0].data.title)
-
-      return pluginPosts
+      // iterate over each group and create a navigation block
+      const navBlocks = []
+      for (const section of Object.entries(sections)) {
+        navBlocks.push({
+          title: section[0].replace('-', ' ').toUpperCase(),
+          items: section[1].map((item) => {
+            return {
+              title: item.data.title,
+              url: item.url,
+              active: item.url === data.page.url,
+            }
+          }),
+        })
+      }
+      // return the navigation blocks
+      return navBlocks
     },
   },
 }

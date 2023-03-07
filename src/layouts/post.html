@@ -5,14 +5,16 @@ layout: base
 <div class="grid grid-flow-row grid-cols-[260px_1fr]">
   <!-- sidebar nav -->
   <nav class="bg-red-50 p-5">
-    <ul>
-      <li>ITEM</li>
-    </ul>
-
-    <!--  -->
-    {% for item in navigation %} {{ item.data.title }} >> {{ item.data.section }} {% endfor %}
-
-    <!--  -->
+    {% for block in navigation %}
+    <span>{{ block.title }}</span>
+    <ol>
+      {% for item in block.items %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ol>
+    {% endfor %}
   </nav>
 
   <!-- content -->
