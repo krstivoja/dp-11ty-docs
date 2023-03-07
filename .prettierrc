@@ -1,0 +1,15 @@
+{
+    "bracketSameLine": true,
+    "htmlWhitespaceSensitivity": "ignore",
+    "singleQuote": true,
+    "semi": false,
+    "printWidth": 100,
+    "overrides": [
+      {
+        "files": "*.md",
+        "options": {
+          "singleQuote": false
+        }
+      }
+    ]
+  }
