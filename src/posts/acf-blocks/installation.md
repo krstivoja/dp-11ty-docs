@@ -1,5 +1,6 @@
 ---
 title: Installation
+category: [acf-blocks]
 section: getting-started
 order: 1
 ---
