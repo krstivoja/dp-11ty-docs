@@ -1,6 +1,6 @@
 ---
 title: Asura
-category: [asura]
+section: getting-started
 order: 1
 ---
 

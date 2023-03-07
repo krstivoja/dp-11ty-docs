@@ -1,6 +1,6 @@
 ---
 title: Add ACF Pro fields
-category: [acf-blocks]
+section: basics
 order: 2
 ---
 
@@ -40,4 +40,3 @@ There is two ways to edit it.
 ![screenshot 2022 05 15 at 20.49.23](../img/Screenshot-2022-05-15-at-20.49.23-800x224.png)
 
 ![screenshot 2022 05 15 at 20.49.30](../img/Screenshot-2022-05-15-at-20.49.30-800x239.png)
-
