@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- canonical -->
+    <link rel="canonical" href="https://docs.dplugins.com{{ page.url }}" />
+
     <!-- tailwind -->
     <link rel="stylesheet" href="/styles.css" />
 
@@ -14,12 +17,16 @@
 
   <body>
     <!-- nav -->
-    <nav>main navigation</nav>
+    <nav class="bg-slate-200 p-5">
+      <ul>
+        <a href="/">DPlugins Docs</a>
+      </ul>
+    </nav>
 
     <!-- main -->
-    <main>{{ content | safe }}</main>
+    <main class="p-5">{{ content | safe }}</main>
 
     <!-- footer -->
-    <footer>footer</footer>
+    <footer></footer>
   </body>
 </html>

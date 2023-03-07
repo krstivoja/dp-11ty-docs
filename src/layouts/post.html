@@ -2,11 +2,14 @@
 layout: base
 ---
 
-<!-- sidebar nav -->
-<nav>SIDEBAR</nav>
+<div class="grid grid-flow-row grid-cols-[260px_1fr] gap-5">
+  <!-- sidebar nav -->
+  <nav class="bg-red-50">
+    <ul>
+      <li>ITEM</li>
+    </ul>
+  </nav>
 
-<!-- content -->
-<article>
-  <h1>{{ title }}</h1>
-  <div>{{ content | safe }}</div>
-</article>
+  <!-- content -->
+  <article class="prose prose-lg bg-green-50">{{ content | safe }}</article>
+</div>
