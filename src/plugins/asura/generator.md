@@ -1,6 +1,5 @@
 ---
 title: Generator
-category: [asura]
 section: advanced
 order: 2
 ---

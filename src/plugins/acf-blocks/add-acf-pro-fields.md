@@ -1,6 +1,5 @@
 ---
 title: Add ACF Pro fields
-category: [acf-blocks]
 section: basics
 order: 2
 ---

@@ -8,6 +8,11 @@ layout: base
     <ul>
       <li>ITEM</li>
     </ul>
+
+    <!--  -->
+    {% for item in navigation %} {{ item.data.title }} >> {{ item.data.section }} {% endfor %}
+
+    <!--  -->
   </nav>
 
   <!-- content -->

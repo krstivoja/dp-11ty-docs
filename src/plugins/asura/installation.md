@@ -1,6 +1,5 @@
 ---
 title: Installation
-category: [asura]
 section: integrations
 order: 3
 ---
