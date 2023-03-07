@@ -6,10 +6,10 @@ layout: base
   <!-- sidebar nav -->
   <nav class="bg-red-50 p-5">
     {% for block in navigation %}
-    <span>{{ block.title }}</span>
+    <span class="text-gray-500">{{ block.title }}</span>
     <ol>
       {% for item in block.items %}
-      <li>
+      <li class="{{ 'bg-red-200' if item.active }}">
         <a href="{{ item.url }}">{{ item.title }}</a>
       </li>
       {% endfor %}
