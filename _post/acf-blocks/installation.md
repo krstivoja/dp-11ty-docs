@@ -1,6 +1,7 @@
 ---
 title: Installation
 category: [acf-blocks]
+order: 1
 ---
 
 **To install the plugin you need to do the next steps:**

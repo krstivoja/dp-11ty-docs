@@ -1,6 +1,7 @@
 ---
 title: Asura
 category: [asura]
+order: 1
 ---
 
 # Why Asura

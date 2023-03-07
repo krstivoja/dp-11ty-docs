@@ -1,6 +1,7 @@
 ---
 title: Add ACF Pro fields
 category: [acf-blocks]
+order: 2
 ---
 
 ## Create Block

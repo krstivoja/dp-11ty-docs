@@ -1,6 +1,7 @@
 ---
 title: Generator
 category: [asura]
+order: 2
 ---
 
 # Generator

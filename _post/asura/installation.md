@@ -1,6 +1,7 @@
 ---
 title: Installation
 category: [asura]
+order: 3
 ---
 
 ## Server Requirements
