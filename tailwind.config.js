@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./dist/**/*.{html,js,md}'],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        clamp: 'clamp(18px,2vw,24px)',
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
