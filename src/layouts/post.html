@@ -2,14 +2,12 @@
 layout: base
 ---
 
-<div class="plugins-wrap grid md:flex md:flex-row-reverse min-h-full">
+<div class="plugins-wrap grid min-h-full md:flex md:flex-row-reverse">
   <div class="grow">
-    <div class="container-narrow py-12 gap-24 flex">
+    <div class="flex gap-24 py-12 container-narrow">
       <main class="w-full">
-        <h1 class="font-title text-6xl mb-12 font-bold tracking-wide">{{ title }}</h1>
-        <article class="prose w-full min-w-full">
-          {{ content | safe }}
-        </article>        
+        <h1 class="font-title mb-12 text-6xl font-bold tracking-wide">{{ title }}</h1>
+        <article class="prose w-full min-w-full">{{ content | safe }}</article>
       </main>
 
       <!-- Toc -->
@@ -24,21 +22,20 @@ layout: base
     </div>
   </div>
 
-  <nav class="p-6 border-r border-slate-200 bg-slate-50 md:w-[260px]">
+  <nav class="border-r border-slate-200 bg-slate-50 p-6 md:w-[260px]">
     <div class="sticky top-[60px]">
       {% for block in navigation %}
-      
-      <div class="text-gray-500 mb-2 text-xs p-1">{{ block.title }}</div>
+
+      <div class="mb-2 p-1 text-xs text-gray-500">{{ block.title }}</div>
       <ol class="mb-6">
         {% for item in block.items %}
         <li class="{{ 'bg-slate-200' if item.active }} hover:bg-slate-200">
-          <a class="p-1 block" href="{{ item.url }}">{{ item.title }}</a>
+          <a class="block p-1" href="{{ item.url }}">{{ item.title }}</a>
         </li>
         {% endfor %}
       </ol>
-      
-      {% endfor %}
 
+      {% endfor %}
     </div>
   </nav>
 </div>

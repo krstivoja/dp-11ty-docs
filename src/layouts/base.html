@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,34 +15,34 @@
     <title>{{ title }}</title>
   </head>
 
-  <body>
+  <body class="flex h-full flex-col">
+    <!-- nav -->
+    <header class="flex items-center justify-between border-b border-slate-300 bg-white p-5">
+      <a class="gap-md flex" href="/">
+        <img
+          class="mr-2 w-[150px]"
+          src="https://dplugins.com/wp-content/uploads/2021/06/dPlugins-logo.svg"
+          alt="" />
+        <div class="mt-[0.5em] font-bold">Docs.</div>
+      </a>
 
-  <!-- nav -->
-  <header class="bg-white p-5 flex items-center justify-between border-b border-slate-300">
-    <a class="flex gap-md" href="/">
-      <img class="w-[150px] mr-2" src="https://dplugins.com/wp-content/uploads/2021/06/dPlugins-logo.svg" alt="">
-      <div class="font-bold mt-[0.5em]">Docs.</div>
-    </a>
-
-    <nav class="flex gap-8 navigation">
-      <a href="https://docs.dplugins.com">Plugins Docs</a>
-      <!-- <a href="https://docs.dplugins.com/writing-guide.html">Writing guide</a>
+      <nav class="navigation flex gap-8">
+        <a href="https://docs.dplugins.com">Plugins Docs</a>
+        <!-- <a href="https://docs.dplugins.com/writing-guide.html">Writing guide</a>
       <a href="https://docs.dplugins.com/how-to-contribute.html">How to contribute</a> -->
-      <a target="_blank" href="https://dplugins.com/">Shop</a>
-    </nav>
-  </header >
+        <a target="_blank" href="https://dplugins.com/">Shop</a>
+      </nav>
+    </header>
 
     <!-- main -->
-    <main>{{ content | safe }}</main>
+    <main class="grow">{{ content | safe }}</main>
 
     <!-- footer -->
-    <footer class="border-t border-slate-300 text-center p-12">
-      <p>All rights reserved to 
-        <a class=" underline" href="https://dplugins.com/" target="_blank">
-            DPlugins Team
-        </a>
-    </p>
-  </footer>
-
+    <footer class="border-t border-slate-300 p-12 text-center">
+      <p>
+        All rights reserved to
+        <a class="underline" href="https://dplugins.com/" target="_blank">DPlugins Team</a>
+      </p>
+    </footer>
   </body>
 </html>
