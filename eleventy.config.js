@@ -3,6 +3,19 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('src/plugins/**/img/**')
   eleventyConfig.setServerPassthroughCopyBehavior('copy')
 
+  /****************************************************************************************************
+   * import all config files
+   ****************************************************************************************************/
+  const glob = require('glob')
+  const path = require('path')
+
+  const configFiles = glob.sync('./src/config/*.js')
+  configFiles.forEach((file) => {
+    const relativeFilePath = './' + path.relative(__dirname, file) // needed for require()
+    eleventyConfig.addPlugin(require(relativeFilePath))
+  })
+  /****************************************************************************************************/
+
   return {
     // folder structure
     dir: {
