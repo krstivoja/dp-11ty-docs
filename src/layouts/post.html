@@ -2,9 +2,9 @@
 layout: base
 ---
 
-<div class="plugins-wrap grid md:flex md:flex-row-reverse">
+<div class="plugins-wrap grid md:flex md:flex-row-reverse min-h-full">
   <div class="grow">
-    <div class="container-narrow py-24 gap-24 flex">
+    <div class="container-narrow py-12 gap-24 flex">
       <main class="w-full">
 
         <h1 class="font-title text-6xl mb-12 font-bold tracking-wide">{{ title }}</h1>
@@ -15,29 +15,32 @@ layout: base
       </main>
 
       <!-- Toc -->
-      <aside class="hidden w-[260px] lg:block">
+      <!-- <aside class="hidden w-[260px] lg:block">
         <div class="p-12 sticky top-[60px] rounded border border-slate-200 bg-slate-50">
           <h4 class="mb-8 uppercase">On the page</h4>
           <ul>
             <li><a href="#-swiss-knife-for-bricks-is-hanfull-set-of-features-that-will-speed-up-your-workflow">👋 Swiss Knife for Bricks is hanfull set of features that will speed up your workflow</a></li>
           </ul>
         </div>
-      </aside>
+      </aside> -->
     </div>
   </div>
 
-  <nav class="p-lg border-r border-slate-200 bg-slate-50 md:w-[260px]">
+  <nav class="p-6 border-r border-slate-200 bg-slate-50 md:w-[260px]">
     <div class="sticky top-[60px]">
       {% for block in navigation %}
-    <span class="text-gray-500">{{ block.title }}</span>
-    <ol>
-      {% for item in block.items %}
-      <li class="{{ 'bg-red-200' if item.active }}">
-        <a href="{{ item.url }}">{{ item.title }}</a>
-      </li>
+      
+      <div class="text-gray-500 mb-2 text-xs p-1">{{ block.title }}</div>
+      <ol class="mb-6">
+        {% for item in block.items %}
+        <li class="{{ 'bg-slate-200' if item.active }} hover:bg-slate-200">
+          <a class="p-1 block" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ol>
+      
       {% endfor %}
-    </ol>
-    {% endfor %}
+
     </div>
   </nav>
 </div>
