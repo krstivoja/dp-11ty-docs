@@ -17,6 +17,7 @@
 
   <body>
 
+  <!-- nav -->
   <header class="bg-white p-5 flex items-center justify-between">
     <a class="flex gap-md" href="/">
       <img class="w-[150px] mr-2" src="https://dplugins.com/wp-content/uploads/2021/06/dPlugins-logo.svg" alt="">
@@ -30,20 +31,18 @@
       <a target="_blank" href="https://dplugins.com/">Shop</a>
     </nav>
   </header >
-    
-    <!-- nav -->
-    <nav class="bg-slate-200 p-5">
-      <ul>
-        <a href="/">DPlugins Docs</a>
-      </ul>
-    </nav>
 
     <!-- main -->
     <main>{{ content | safe }}</main>
 
     <!-- footer -->
-    <footer class="bg-blue-50 p-5">
-      <p class="text-center">footer</p>
-    </footer>
+    <footer class="border-t border-slate-300 text-center p-12">
+      <p>All rights reserved to 
+        <a class=" underline" href="https://dplugins.com/" target="_blank">
+            DPlugins Team
+        </a>
+    </p>
+  </footer>
+  
   </body>
 </html>
