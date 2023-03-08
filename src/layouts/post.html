@@ -2,10 +2,33 @@
 layout: base
 ---
 
-<div class="grid grid-flow-row grid-cols-[260px_1fr]">
-  <!-- sidebar nav -->
-  <nav class="bg-red-50 p-5">
-    {% for block in navigation %}
+<div class="plugins-wrap grid md:flex md:flex-row-reverse">
+  <div class="grow">
+    <div class="container-narrow py-24 gap-24 flex">
+      <main class="w-full">
+
+        <h1 class="font-title text-6xl mb-12 font-bold tracking-wide">{{ title }}</h1>
+
+        <article class="prose w-full min-w-full">
+          {{ content | safe }}
+        </article>
+      </main>
+
+      <!-- Toc -->
+      <aside class="hidden w-[260px] lg:block">
+        <div class="p-12 sticky top-[60px] rounded border border-slate-200 bg-slate-50">
+          <h4 class="mb-8 uppercase">On the page</h4>
+          <ul>
+            <li><a href="#-swiss-knife-for-bricks-is-hanfull-set-of-features-that-will-speed-up-your-workflow">👋 Swiss Knife for Bricks is hanfull set of features that will speed up your workflow</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <nav class="p-lg border-r border-slate-200 bg-slate-50 md:w-[260px]">
+    <div class="sticky top-[60px]">
+      {% for block in navigation %}
     <span class="text-gray-500">{{ block.title }}</span>
     <ol>
       {% for item in block.items %}
@@ -15,8 +38,6 @@ layout: base
       {% endfor %}
     </ol>
     {% endfor %}
+    </div>
   </nav>
-
-  <!-- content -->
-  <article class="prose prose-lg bg-green-50 p-5">{{ content | safe }}</article>
 </div>
