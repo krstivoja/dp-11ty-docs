@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./dist/**/*.{html,js,md}'],
+  content: ['./src/**/*.{html,js,md}'],
   theme: {
     extend: {
       fontSize: {
