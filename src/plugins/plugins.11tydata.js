@@ -4,7 +4,7 @@ module.exports = {
   layout: 'post',
   eleventyComputed: {
     pluginId: (data) => data.page.filePathStem.split('/')[2], // get the plugin id from foldername
-    permalink: (data) => `/plugins/${data.pluginId}/${data.section}/${data.page.fileSlug}/`,
+    permalink: (data) => `/plugins/${data.pluginId}/${data.page.fileSlug}/`,
     navigation: (data) => {
       // get all posts for this plugin
       const pluginPosts = data.collections.all.filter((el) => el.data.pluginId === data.pluginId)

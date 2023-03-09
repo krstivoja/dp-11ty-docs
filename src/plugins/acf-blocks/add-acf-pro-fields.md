@@ -1,8 +1,10 @@
 ---
 title: Add ACF Pro fields
-section: basics
-order: 2
+category: [acf-blocks]
+order: 19
 ---
+
+{% youtube 'id', class="XXX" %}
 
 ## Create Block
 
@@ -40,3 +42,4 @@ There is two ways to edit it.
 ![screenshot 2022 05 15 at 20.49.23](../img/Screenshot-2022-05-15-at-20.49.23-800x224.png)
 
 ![screenshot 2022 05 15 at 20.49.30](../img/Screenshot-2022-05-15-at-20.49.30-800x239.png)
+

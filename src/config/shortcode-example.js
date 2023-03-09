@@ -1,8 +1,8 @@
 module.exports = (eleventyConfig) => {
   eleventyConfig.addNunjucksShortcode('youtube', (id, props) => {
-    const output = `videocode${id} class="${props.class}"`
+    const output = `videocode${id}  class="${props.class}"`
 
-    return `output`
+    return output;
   })
 }
 

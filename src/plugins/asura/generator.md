@@ -1,10 +1,12 @@
 ---
 title: Generator
-section: advanced
-order: 2
+category: [asura]
+order: 55
 ---
 
 # Generator
+
+<div class="wp-block-embed__wrapper">https://www.youtube.com/embed/lomSCrw4Pyc </div>The generator helps you predefined some configuration to allowing you to bulk license generation and automate the selling of your design sets with WooCommerce or Easy Digital Downloads without manually creating the license for each purchase.
 
 ## Creating Generator
 
