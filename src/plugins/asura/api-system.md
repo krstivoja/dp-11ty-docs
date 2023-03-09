@@ -4,7 +4,7 @@ category: [asura]
 order: 66
 ---
 
-
+{% youtube "bI2yno3MkWI" %}
 
 Asura uses the API system on its core, allowing to manage Asura on multiple websites from a single admin page with fully AJAX experience using the [Remote](https://markdowntohtml.com/remote) feature. ssdadad
 

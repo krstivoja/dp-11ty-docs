@@ -13,7 +13,7 @@ order: 15
 7. **Description**
 8. **Code Block**
 
-![block preview 1](/img/block-preview-1-800x540.png)
+![block preview 1](../img/block-preview-1-800x540.png)
 
 ## Block Title 
 

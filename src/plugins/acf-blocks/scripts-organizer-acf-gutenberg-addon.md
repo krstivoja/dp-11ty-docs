@@ -6,7 +6,7 @@ order: 11
 
 **Please take a look at this video to get you started**
 
-
+{% youtube "RR6f4btE24E" %}
 
 ### Or read documentation for all the details 
 

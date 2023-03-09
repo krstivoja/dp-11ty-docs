@@ -4,12 +4,6 @@ category: [acf-blocks]
 order: 19
 ---
 
-yt
-
-{% youtube 'NKqogVcqDHA' %}
-
-yt
-
 ## Create Block
 
 **The first step is to create Gutenberg block**, so you have where to assign ACF fields to it. If Block is not created you will not be able to target fields location.

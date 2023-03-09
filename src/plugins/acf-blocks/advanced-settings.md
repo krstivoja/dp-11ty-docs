@@ -103,7 +103,7 @@ If this option is not enabled you will get ACF fields in sidebar. If this option
 
 Enables option to save it as Reusable block
 
-![screenshot 2022 05 26 at 13.38.21](../img/Screenshot-2022-05-26-at-13.38.21-800x640.png)
+![screenshot 2022 05 26 at 13.38.21](../img/add-to-reusable-800x640.png)
 
 ## Lock
 

@@ -1,3 +1,15 @@
 .DS_Store
 node_modules
 dist
+src/plugins/asura
+src/plugins/collaboration
+src/plugins/devkit
+src/plugins/font-hero
+src/plugins/oxyfont-manager
+src/plugins/plain-classes-gutenberg
+src/plugins/plugins.11tydata.js
+src/plugins/sandbox
+src/plugins/scripts-organizer
+src/plugins/swiss-knife
+src/plugins/winden
+src/plugins/wp-admin-cleaner
